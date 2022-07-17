@@ -19,7 +19,6 @@ module.exports = (app) => {
   });
   //get user infos
   app.post("/user/getUser", async (req, res) => {
-    res.json({ heool: "sdsddsd" });
     const services = new userServices();
     const data = services.GetUser(req.body.data);
     if (data) {
